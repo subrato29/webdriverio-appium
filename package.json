@@ -3,6 +3,7 @@
   "type": "module",
   "devDependencies": {
     "@wdio/appium-service": "^8.39.0",
+    "@wdio/cli": "^9.0.7",
     "@wdio/local-runner": "^8.39.0",
     "@wdio/mocha-framework": "^8.39.0",
     "@wdio/spec-reporter": "^8.39.0",

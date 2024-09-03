@@ -1,3 +1,5 @@
+import path from 'path'
+
 export const config = {
   //
   // ====================
@@ -56,9 +58,11 @@ export const config = {
       // capabilities for local Appium web tests on an Android Emulator
       platformName: 'Android',
       browserName: 'Chrome',
-      'appium:deviceName': 'Android GoogleAPI Emulator',
-      'appium:platformVersion': '12.0',
+      'appium:deviceName': 'emulator-5556',
+      'appium:platformVersion': '11.0',
       'appium:automationName': 'UiAutomator2',
+      'appium:noReset': true,
+      'appium.app': path.join(process.cwd(), 'app/android/test_android.apk'),
     },
   ],
 
